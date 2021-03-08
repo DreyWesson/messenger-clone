@@ -1,11 +1,11 @@
-name: Node continuous deployment
+name: Node CI/CD
 
 on:
   push:
     branches: [master]
 
 jobs:
-  deploy:
+  build_deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
